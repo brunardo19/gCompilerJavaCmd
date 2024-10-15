@@ -13,12 +13,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         // Leer el archivo de texto
-        String filePath = "test.lang";
+        String filePath = "src/main/java/org/example/test.txt";
         String fileContent = "";
         try {
             fileContent = Files.readString(Paths.get(filePath), StandardCharsets.UTF_8);
         } catch (IOException e) {
-            System.err.println("Error leyendo el archivo: " + e.getMessage());
+            System.err.println(e.getMessage());
             return; // Salir si el archivo no se puede leer
         }
 
