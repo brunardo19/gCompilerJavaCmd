@@ -1,0 +1,3 @@
+module gParserJava {
+    requires antlr;
+}
